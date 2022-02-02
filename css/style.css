@@ -88,22 +88,26 @@ footer *{
 .footer__center{
     flex-grow: 1;
     display: flex;
-    width: calc(100% / 3);
 }
 
 .footer__left{
     justify-content: flex-start;
     align-items: center;
     text-align: center;
+    width: 20%;
 }
 
 .footer__center{
     justify-content: center;
+    width: 60%;
+
 }
 
 .footer__right{
     justify-content: flex-end;
     text-align: center;
+    width: 20%;
+
 }
 
 .footer__item{
