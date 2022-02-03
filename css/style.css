@@ -79,10 +79,6 @@ footer{
     display: flex;
 }
 
-footer *{
-    justify-content: space-between;
-}
-
 .footer__left,
 .footer__right,
 .footer__center{
