@@ -85,11 +85,11 @@ footer{
 .footer__center{
     flex-grow: 1;
     display: flex;
+    align-items: center;
 }
 
 .footer__left{
     justify-content: flex-start;
-    align-items: center;
     text-align: center;
     width: 20%;
 }
@@ -97,7 +97,7 @@ footer{
 .footer__center{
     justify-content: center;
     width: 60%;
-
+    text-align: center;
 }
 
 .footer__right{
@@ -122,7 +122,7 @@ footer{
 .footer__item-right{
     margin-left: 10px;
     font-size: 10px;
-
+    flex-grow: 1;
 }
 
 .footer__item:nth-child(4) .footer__item-icon{
@@ -139,6 +139,7 @@ footer{
     background-color: rgb(75, 75, 75);
     color: rgb(187, 0, 0);
     position: relative;
+    align-self: stretch;
 }
 
 .footer__end-meeting span{
@@ -148,3 +149,19 @@ footer{
     transform: translate(-50%,-50%);
 }
 
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .footer__center .footer__item{
+        display: none;
+    }
+
+    .footer__item-icon{
+        font-size: 10pt;
+    }
+
+    .footer__center .footer__item:last-child{
+        display: block;
+    }
+}
